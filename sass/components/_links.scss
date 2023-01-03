@@ -1,0 +1,33 @@
+.links__list {
+  display: flex;
+
+  & .links__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.links-block > .links__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $second-color;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.links-block .links__image {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: $links-bg;
+  fill: $second-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

@@ -1,0 +1,12 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+  &__link {
+    fill: $icon-color;
+  }
+  &__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+}
